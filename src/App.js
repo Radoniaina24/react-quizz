@@ -88,7 +88,7 @@ function App() {
     useEffect(function(){
         async function getAllQuestion(){
             try{
-                const response = await axios.get("http://localhost:8000/questions")
+                const response = await axios.get("https://json-server-wvzn.onrender.com/questions")
                 const data = response.data
                 dispatch({type : "dataReceived", payload : data})
             }
